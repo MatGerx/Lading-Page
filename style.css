@@ -98,11 +98,11 @@ h2 {
 .header__inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .logo img {
-  width: 12rem;
+  display: none;
 }
 
 .nav {
@@ -325,5 +325,19 @@ h2 {
 
   .footer__inner {
     grid-template-columns: 1.2fr 1fr 1fr 0.8fr;
+  }
+  .header__inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .logo img {
+    display: block; /* 🔑 vuelve a aparecer */
+    width: 120px; /* o el tamaño que quieras */
   }
 }
