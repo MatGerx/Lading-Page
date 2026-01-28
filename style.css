@@ -339,4 +339,7 @@ h2 {
     display: block; /* 🔑 vuelve a aparecer */
     width: 120px; /* o el tamaño que quieras */
   }
+  .footer {
+    padding: 10rem 0 2rem;
+  }
 }
